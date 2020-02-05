@@ -1,0 +1,237 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Szűrő
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '- Mind -'
+            offset_label: Eltolás
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        title:
+          label: Cím
+          separator: ', '
+        item_count:
+          label: Tételek
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  closed:
+    display_title: Lezárt
+    display_options:
+      menu:
+        title: Lezárt
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        created:
+          label: Létrehozva
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        uid:
+          expose:
+            label: Szolgáltató
+        title:
+          expose:
+            label: Cím
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Cím
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        loop_count:
+          separator: ', '
+        operations:
+          label: Műveletek

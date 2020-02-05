@@ -1,0 +1,11 @@
+type_settings:
+  states:
+    archived:
+      label: Archivado
+    draft:
+      label: Borrador
+    published:
+      label: Publicado
+  transitions:
+    create_new_draft:
+      label: 'Crear Nuevo Borrador'

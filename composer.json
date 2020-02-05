@@ -1,6 +1,6 @@
 {
-    "name": "ec-europa/oesd",
-    "description": "OpenEuropa Standard Distribution",
+    "name": "openeuropa/distribution",
+    "description": "OpenEuropa Distribution",
     "type": "drupal-profile",
     "license": "EUPL-1.2",
     "minimum-stability": "dev",
@@ -59,10 +59,10 @@
         },
         "enable-patching": true,
         "installer-paths": {
-            "build/core": ["type:drupal-core"],
-            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "build/modules/contrib/{$name}": ["type:drupal-module"],
-            "build/themes/contrib/{$name}": ["type:drupal-theme"]
+            "web/core": ["type:drupal-core"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"]
         },
         "patches": {
         }

@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      filters:
+        search:
+          expose:
+            label: Търси
+  entity_browser_1:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Търси
+  entity_browser_2:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Търси

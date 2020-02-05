@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      title: Източници
+  feed_1:
+    display_options:
+      title: 'OPML източник'
+  page_1:
+    display_title: Страница
+    display_options:
+      menu:
+        title: Източници

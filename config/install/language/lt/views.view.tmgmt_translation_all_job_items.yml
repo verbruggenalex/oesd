@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        state:
+          label: Etapas
+        label:
+          label: Žymė
+        type:
+          label: Tipas
+        source_language:
+          label: Nuo
+        target_language:
+          label: Kam
+        tags_count:
+          label: Raktažodžiai
+        changed:
+          label: Pakeista
+        operations:
+          label: Veiksmai
+      filters:
+        state:
+          group_info:
+            label: Etapas
+  page_1:
+    display_title: Puslapis

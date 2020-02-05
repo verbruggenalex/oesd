@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.link_list_link.external.url
+    - oe_link_lists_manual_source.link_list_link_type.external
+  module:
+    - link
+id: link_list_link.external.default
+targetEntityType: link_list_link
+bundle: external
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  url:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden: {  }

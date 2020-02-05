@@ -1,0 +1,44 @@
+settings:
+  allowed_values:
+    1:
+      label: Ulkoinen
+    4:
+      label: Kirja
+    5:
+      label: Murupolku
+    11:
+      label: Sulje
+    13:
+      label: Kopioi
+    14:
+      label: Data
+    17:
+      label: Lataa
+    18:
+      label: Muokkaa
+    20:
+      label: Virhe
+    25:
+      label: Tiedosto
+    27:
+      label: Yleinen
+    30:
+      label: Kuva
+    32:
+      label: Tieto
+    34:
+      label: Kieli
+    35:
+      label: Vasemmalla
+    38:
+      label: Sijainti
+    44:
+      label: Oikealla
+    45:
+      label: RSS
+    46:
+      label: Etsi
+    54:
+      label: Ylös
+    56:
+      label: Varoitus

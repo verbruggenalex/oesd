@@ -1,0 +1,35 @@
+label: 'Sursele agregatorului'
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+          tags:
+            previous: '‹ Anterior'
+            next: 'Următor ›'
+            first: '« Primul'
+            last: 'Ultimul »'
+      title: Surse
+  feed_1:
+    display_title: Flux
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: 'resurse OPML'
+  page_1:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Surse

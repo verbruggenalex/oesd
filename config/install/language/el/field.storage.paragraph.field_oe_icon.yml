@@ -1,0 +1,42 @@
+settings:
+  allowed_values:
+    1:
+      label: Εξωτερικό
+    4:
+      label: Βιβλίο
+    11:
+      label: Κλείσιμο
+    13:
+      label: Αντιγραφή
+    14:
+      label: Δεδομένα
+    17:
+      label: Λήψη
+    18:
+      label: Επεξεργασία
+    20:
+      label: Σφάλμα
+    25:
+      label: Αρχείο
+    27:
+      label: Καθολικό
+    30:
+      label: Εικόνα
+    32:
+      label: Πληροφορίες
+    34:
+      label: Γλώσσα
+    35:
+      label: Αριστερά
+    38:
+      label: Τοποθεσία
+    44:
+      label: Δεξιά
+    45:
+      label: RSS
+    46:
+      label: Αναζήτηση
+    54:
+      label: Επάνω
+    56:
+      label: Προειδοποίηση

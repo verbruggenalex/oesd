@@ -1,0 +1,26 @@
+settings:
+  allowed_values:
+    3:
+      label: Музика
+    4:
+      label: Книга
+    17:
+      label: Свали
+    18:
+      label: Редактирай
+    20:
+      label: Грешка
+    25:
+      label: Файл
+    30:
+      label: Снимка
+    34:
+      label: Език
+    38:
+      label: Местоположение
+    44:
+      label: Дясно
+    45:
+      label: RSS
+    46:
+      label: Търси

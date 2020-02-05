@@ -1,0 +1,243 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Szűrő
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '- Mind -'
+            offset_label: Eltolás
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        title:
+          label: Címke
+          separator: ', '
+        item_count:
+          label: Tételek
+      filters:
+        status:
+          expose:
+            label: Állapot
+  closed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+      menu:
+        title: Lezárt
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+  eligible:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+  my_tasks:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+          separator: ', '
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+        title:
+          expose:
+            label: Címke
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Tömeges frissítés'
+        status:
+          label: Állapot
+        title:
+          label: Címke
+          separator: ', '
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        item_count:
+          label: Tételek
+        operations:
+          label: Műveletek
+      filters:
+        status:
+          expose:
+            label: Állapot
+      tab_options:
+        title: Fordítás

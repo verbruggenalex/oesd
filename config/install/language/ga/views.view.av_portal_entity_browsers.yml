@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Cuir i bhfeidhm'
+      filters:
+        search:
+          expose:
+            label: Cuardaigh
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Cuardaigh
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Cuardaigh

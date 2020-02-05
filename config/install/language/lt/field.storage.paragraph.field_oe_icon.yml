@@ -1,0 +1,44 @@
+settings:
+  allowed_values:
+    3:
+      label: Audio
+    4:
+      label: Knyga
+    5:
+      label: Kelias
+    11:
+      label: Uždaryti
+    13:
+      label: Kopijuoti
+    17:
+      label: Atsisiųsti
+    18:
+      label: Redaguoti
+    20:
+      label: Klaida
+    25:
+      label: Failas
+    27:
+      label: Globalus
+    30:
+      label: Nuotrauka
+    32:
+      label: Informacija
+    34:
+      label: Kalba
+    35:
+      label: Kairė
+    38:
+      label: Vieta
+    44:
+      label: Dešinė
+    45:
+      label: RSS
+    46:
+      label: Paieška
+    54:
+      label: Viršun
+    55:
+      label: Video
+    56:
+      label: Įspėjimas

@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      filters:
+        search:
+          expose:
+            label: Paieška
+  entity_browser_1:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Paieška
+  entity_browser_2:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Paieška

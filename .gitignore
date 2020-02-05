@@ -1,8 +1,7 @@
 .DS_Store
 .idea
 behat.yml
-build
-master-site
+web
 composer.lock
 grumphp.yml
 runner.yml
@@ -11,3 +10,4 @@ vendor
 yarn.lock
 phpunit.xml
 docker-compose.*.yml
+dump.sql

@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Externí
+    3:
+      label: Audio
+    4:
+      label: Kniha
+    5:
+      label: 'Drobečková navigace'
+    11:
+      label: Zavřít
+    13:
+      label: Kopírovat
+    14:
+      label: Data
+    17:
+      label: Stáhnout
+    18:
+      label: Upravit
+    20:
+      label: Chyba
+    25:
+      label: Soubor
+    27:
+      label: Globální
+    30:
+      label: Obrázek
+    32:
+      label: Info
+    34:
+      label: Jazyk
+    35:
+      label: Left
+    38:
+      label: Místo
+    44:
+      label: Right
+    45:
+      label: RSS
+    46:
+      label: Hledat
+    54:
+      label: Nahoru
+    55:
+      label: Video
+    56:
+      label: Varování

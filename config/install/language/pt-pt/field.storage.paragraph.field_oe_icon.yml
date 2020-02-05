@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Externo
+    3:
+      label: Áudio
+    4:
+      label: Livro
+    5:
+      label: 'Navegação estrutural'
+    11:
+      label: Fechar
+    13:
+      label: Copiar
+    14:
+      label: Dados
+    17:
+      label: Descarregar
+    18:
+      label: Editar
+    20:
+      label: Erro
+    25:
+      label: Ficheiro
+    27:
+      label: Global
+    30:
+      label: Imagem
+    32:
+      label: Informações
+    34:
+      label: Idioma
+    35:
+      label: Esquerda
+    38:
+      label: Localização
+    44:
+      label: Direita
+    45:
+      label: RSS
+    46:
+      label: Pesquisar
+    54:
+      label: 'Para cima'
+    55:
+      label: Vídeo
+    56:
+      label: Aviso

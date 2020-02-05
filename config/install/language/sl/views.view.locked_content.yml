@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        title:
+          label: Naslov
+        type:
+          label: 'Tip vsebine'
+        operations:
+          label: Operacije
+      filters:
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Objavljeno
+        type:
+          expose:
+            label: 'Tip vsebine'
+        title:
+          expose:
+            label: Naslov
+  page_1:
+    display_title: Stran

@@ -1,0 +1,52 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      fields:
+        title:
+          label: Tytuł
+          separator: ', '
+        type:
+          label: 'Rodzaj zawartości'
+          separator: ', '
+        name:
+          separator: ', '
+        operations:
+          label: Operacje
+      filters:
+        status:
+          expose:
+            label: 'Status publikacji'
+          group_info:
+            label: 'Status publikacji'
+            group_items:
+              1:
+                title: Opublikowane
+              2:
+                title: Nieopublikowany
+        type:
+          expose:
+            label: 'Rodzaj zawartości'
+        title:
+          expose:
+            label: Tytuł
+  page_1:
+    display_title: Strona

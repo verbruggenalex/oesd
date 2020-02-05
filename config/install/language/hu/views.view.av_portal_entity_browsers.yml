@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Első'
+            last: 'Utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '- Mind -'
+            offset_label: Eltolás
+      filters:
+        search:
+          expose:
+            label: Keresés
+        type:
+          expose:
+            label: Típus
+  all:
+    display_title: Mind
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Keresés
+        type:
+          expose:
+            label: Típus
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Keresés
+        type:
+          expose:
+            label: Típus

@@ -1,0 +1,6 @@
+type_settings:
+  states:
+    archived:
+      label: Arhiveeritud
+    published:
+      label: Avalikustatud

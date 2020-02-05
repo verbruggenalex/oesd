@@ -1,0 +1,48 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      filters:
+        search:
+          expose:
+            label: Căutare
+        type:
+          expose:
+            label: Tip
+  all:
+    display_title: Toate
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Căutare
+        type:
+          expose:
+            label: Tip
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Căutare
+        type:
+          expose:
+            label: Tip

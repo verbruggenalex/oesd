@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - oe_link_lists
+    - oe_link_lists_manual_source
+id: link_list.links
+field_name: links
+entity_type: link_list
+type: entity_reference_revisions
+settings:
+  target_type: link_list_link
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

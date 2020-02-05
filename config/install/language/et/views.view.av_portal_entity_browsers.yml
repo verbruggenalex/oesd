@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Peamine
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rakenda
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Esimene'
+            last: 'Viimane »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      filters:
+        search:
+          expose:
+            label: Otsing
+        type:
+          expose:
+            label: Liik
+  all:
+    display_title: Kõik
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Otsing
+        type:
+          expose:
+            label: Liik
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Otsing
+        type:
+          expose:
+            label: Liik

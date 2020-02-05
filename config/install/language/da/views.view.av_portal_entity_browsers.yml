@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      filters:
+        search:
+          expose:
+            label: Søg
+        type:
+          expose:
+            label: Type
+  all:
+    display_title: Alle
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Søg
+        type:
+          expose:
+            label: Type
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Søg
+        type:
+          expose:
+            label: Type

@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Principale
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Prima'
+            last: 'Ultima »'
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+      filters:
+        search:
+          expose:
+            label: Cerca
+        type:
+          expose:
+            label: Tipo
+  all:
+    display_title: Tutti
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Cerca
+        type:
+          expose:
+            label: Tipo
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Cerca
+        type:
+          expose:
+            label: Tipo

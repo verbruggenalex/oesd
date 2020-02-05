@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Externe
+    3:
+      label: Audio
+    4:
+      label: Livre
+    5:
+      label: 'Fil d''Ariane'
+    11:
+      label: Fermer
+    13:
+      label: Copier
+    14:
+      label: Données
+    17:
+      label: Téléchargement
+    18:
+      label: Modifier
+    20:
+      label: Erreur
+    25:
+      label: Fichier
+    27:
+      label: Global
+    30:
+      label: Image
+    32:
+      label: Info
+    34:
+      label: Langue
+    35:
+      label: Gauche
+    38:
+      label: Emplacement
+    44:
+      label: Droit
+    45:
+      label: RSS
+    46:
+      label: Rechercher
+    54:
+      label: Haut
+    55:
+      label: Vidéo
+    56:
+      label: Avertissement

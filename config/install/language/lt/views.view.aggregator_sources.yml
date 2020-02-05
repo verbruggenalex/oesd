@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      title: Šaltinis
+  feed_1:
+    display_title: Srautas
+    display_options:
+      title: 'OPML tiekimas'
+  page_1:
+    display_title: Puslapis
+    display_options:
+      menu:
+        title: Šaltinis

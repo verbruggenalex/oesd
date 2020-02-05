@@ -1,0 +1,36 @@
+label: 'Hírcsatorna források'
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '- Mind -'
+            offset_label: Eltolás
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+      title: Hírforrások
+  feed_1:
+    display_title: Hírcsatorna
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: 'OPML hírcsatorna'
+  page_1:
+    display_title: Oldal
+    display_options:
+      menu:
+        title: Hírforrások

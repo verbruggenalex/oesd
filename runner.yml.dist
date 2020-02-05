@@ -1,6 +1,6 @@
 drupal:
-  root: "build"
-  base_url: "http://web:8080/build"
+  root: "web"
+  base_url: "http://web:8080/web"
   database:
     host: "mysql"
     port: "3306"
@@ -11,7 +11,7 @@ drupal:
     host: "sparql"
     port: "8890"
   site:
-    profile: "minimal"
+    profile: "oesd"
     name: "OESD"
   post_install:
     - "./vendor/bin/drush cr"
@@ -24,64 +24,12 @@ drupal:
       'namespace' => 'Drupal\\Driver\\Database\\sparql',
       'driver' => 'sparql',
     ];
-  settings:
-    settings:
-      file_scan_ignore_directories:
-        - "vendor"
-        - "${drupal.root}"
-      extension_discovery_scan_tests: TRUE
-      file_private_path: "sites/default/files/private"
-    databases:
-      sparql_default:
-        default:
-          prefix: ""
-          host: ${drupal.sparql.host}
-          port: ${drupal.sparql.port}
-          namespace: 'Drupal\Driver\Database\sparql'
-          driver: 'sparql'
 selenium:
   host: "http://selenium"
   port: "4444"
   browser: "chrome"
 
 commands:
-  drupal:site-setup:
-    - { task: "symlink", from: "../../..", to: "${drupal.root}/profiles/custom/ewcms" }
-    - { task: "run", command: "drupal:drush-setup" }
-    - { task: "run", command: "drupal:settings-setup" }
-    # - { task: "run", command: "setup:behat" }
-    - task: "append"
-      file: "build/sites/default/settings.override.php"
-      text: |
-        $config['cas.settings']['server']['hostname'] = 'authentication';
-        $config['cas.settings']['server']['port'] = 7002;
-        $config['cas.settings']['server']['verify'] = 2;
-        $settings["poetry.identifier.sequence"] = getenv('POETRY_IDENTIFIER_SEQUENCE');
-        $settings["poetry.service.username"] = getenv('POETRY_SERVICE_USERNAME');
-        $settings["poetry.service.password"] = getenv('POETRY_SERVICE_PASSWORD');
-        $settings["poetry.notification.username"] = getenv('POETRY_NOTIFICATION_USERNAME');
-        $settings["poetry.notification.password"] = getenv('POETRY_NOTIFICATION_PASSWORD');
-  drone:demo-setup:
-    - task: "append"
-      file: "build/sites/default/settings.override.php"
-      text: |
-
-        $config['cas.settings']['server']['hostname'] = 'ecas.ec.europa.eu';
-        $config['cas.settings']['server']['port'] = 443;
-        $config['cas.settings']['server']['verify'] = 0;
-        $config['cas.settings']['forced_login']['enabled'] = FALSE;
-  # Setup master site so we can run EWCMS profile's Behat tests on it. In order to do this we have to:
-  # 1. allow to enable test module, this is necessary when running media related Behat tests
-  # 2. disable SSL verification, this is necessary when running tests accessing the EU Login mock service
-  drone:master-site-setup:
-    - task: "append"
-      file: "master-site/dist/web/sites/default/settings.php"
-      text: |
-
-        $settings["extension_discovery_scan_tests"] = true;
-        $config["cas.settings"]["server"]["verify"] = 2;
-#   setup:behat:
-#     - { task: "process", source: "behat.yml.dist", destination: "behat.yml" }
   drupal:enable-openeuropa:
     - drush sql-drop -y
     - ./vendor/bin/run toolkit:install-clean
@@ -143,3 +91,16 @@ commands:
     # - drush en -y oe_theme_demo
     - drush en -y oe_theme_helper
     # - drush en -y oe_theme_test
+  drupal:site-setup:
+      - { task: "run", command: "drupal:permissions-setup" }
+      - { task: "mkdir", dir: "web/profiles/custom/oesd" }
+      - cd web/profiles/custom/oesd && ln -sf ../../../../* .
+      - rm -f web/profiles/custom/oesd/web web/profiles/custom/oesd/vendor
+      - { task: "run", command: "drupal:settings-setup" }
+      - { task: "run", command: "drupal:drush-setup" }
+  profile:config-export:
+      - ./vendor/bin/drush config:export -y
+      - rsync -az --exclude 'system.site.yml' --exclude 'core.extension.yml' config/sync/ config/install --delete
+      - "find ./config/install/ -type f -exec sed -i -e '/_core:/,+1d' {} \\;"
+      - "find ./config/install/ -type f -exec sed -i -e '/^uuid: /d' {} \\;"
+      - rm -Rf config/sync

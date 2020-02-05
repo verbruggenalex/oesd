@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_list_link.url
+    - oe_link_lists_manual_source.link_list_link_type.external
+  module:
+    - link
+id: link_list_link.external.url
+field_name: url
+entity_type: link_list_link
+bundle: external
+label: URL
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

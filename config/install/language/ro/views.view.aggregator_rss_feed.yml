@@ -1,0 +1,28 @@
+label: 'Agregator de fluxuri RSS'
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+          tags:
+            previous: '‹ Anterior'
+            next: 'Următor ›'
+            first: '« Primul'
+            last: 'Ultimul »'
+      fields:
+        iid:
+          label: 'ID-ul elementului'
+      title: 'Agregator de fluxuri RSS'
+  feed_items:
+    display_title: Flux

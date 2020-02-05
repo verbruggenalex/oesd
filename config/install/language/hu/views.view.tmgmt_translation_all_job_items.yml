@@ -1,0 +1,56 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '- Mind -'
+            offset_label: Eltolás
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+      fields:
+        state:
+          label: Állapot
+        label:
+          label: Címke
+        type:
+          label: Típus
+        source_language:
+          label: Honnan
+          separator: ', '
+        target_language:
+          label: Hova
+          separator: ', '
+        word_count:
+          separator: ', '
+        tags_count:
+          label: Címkék
+          separator: ', '
+        changed:
+          label: Módosítva
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        state:
+          expose:
+            label: Állapotok
+          group_info:
+            label: Állapot
+        source_language:
+          expose:
+            label: 'Forrás nyelve'
+  page_1:
+    display_title: Oldal

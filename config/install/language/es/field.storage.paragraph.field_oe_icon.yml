@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Externo
+    3:
+      label: Audio
+    4:
+      label: Libro
+    5:
+      label: 'Sobrescribir enlaces de ayuda a la navegación'
+    11:
+      label: Cerrar
+    13:
+      label: Copiar
+    14:
+      label: Datos
+    17:
+      label: Descargar
+    18:
+      label: Editar
+    20:
+      label: Error
+    25:
+      label: Archivo
+    27:
+      label: Global
+    30:
+      label: Imagen
+    32:
+      label: Info
+    34:
+      label: Idioma
+    35:
+      label: Izquierda
+    38:
+      label: Ubicación
+    44:
+      label: Derecha
+    45:
+      label: RSS
+    46:
+      label: Buscar
+    54:
+      label: Arriba
+    55:
+      label: Vídeo
+    56:
+      label: Advertencia

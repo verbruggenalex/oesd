@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Extern
+    3:
+      label: Audio
+    4:
+      label: Buch
+    5:
+      label: Pfadnavigation
+    11:
+      label: Schließen
+    13:
+      label: Kopieren
+    14:
+      label: Daten
+    17:
+      label: Herunterladen
+    18:
+      label: Bearbeiten
+    20:
+      label: Fehler
+    25:
+      label: Datei
+    27:
+      label: Global
+    30:
+      label: Bild
+    32:
+      label: Info
+    34:
+      label: Sprache
+    35:
+      label: Links
+    38:
+      label: Standort
+    44:
+      label: Rechts
+    45:
+      label: RSS
+    46:
+      label: Suche
+    54:
+      label: 'Nach oben'
+    55:
+      label: Video
+    56:
+      label: Warnung

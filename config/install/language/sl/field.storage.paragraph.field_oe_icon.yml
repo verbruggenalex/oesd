@@ -1,0 +1,28 @@
+settings:
+  allowed_values:
+    4:
+      label: Knjiga
+    11:
+      label: Zapri
+    17:
+      label: Prenesi
+    18:
+      label: Uredi
+    20:
+      label: Napaka
+    25:
+      label: Datoteka
+    30:
+      label: Slika
+    32:
+      label: Podatki
+    34:
+      label: Jezik
+    38:
+      label: Mesto
+    45:
+      label: RSS
+    46:
+      label: Išči
+    56:
+      label: Opozorilo

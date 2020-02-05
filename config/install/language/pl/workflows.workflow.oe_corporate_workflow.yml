@@ -1,0 +1,11 @@
+type_settings:
+  states:
+    archived:
+      label: Zarchiwizowane
+    draft:
+      label: 'Wersja robocza'
+    published:
+      label: Opublikowane
+  transitions:
+    create_new_draft:
+      label: 'Stwórz nową wersję roboczą'

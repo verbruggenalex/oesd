@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: Vízszintes
+    -
+      label: Függőleges

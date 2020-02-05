@@ -1,0 +1,44 @@
+settings:
+  allowed_values:
+    1:
+      label: Väline
+    4:
+      label: Raamat
+    11:
+      label: Sulge
+    13:
+      label: Kopeeri
+    14:
+      label: Andmed
+    17:
+      label: Allalaadimine
+    18:
+      label: Muuda
+    20:
+      label: Viga
+    25:
+      label: Manus
+    27:
+      label: Globaalne
+    30:
+      label: Pilt
+    32:
+      label: Info
+    34:
+      label: Keel
+    35:
+      label: Vasakul
+    38:
+      label: Asukoht
+    44:
+      label: Paremal
+    45:
+      label: 'RSS vood'
+    46:
+      label: Otsing
+    54:
+      label: Üles
+    55:
+      label: Video
+    56:
+      label: Hoiatus

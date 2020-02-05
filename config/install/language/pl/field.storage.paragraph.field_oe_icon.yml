@@ -1,0 +1,48 @@
+settings:
+  allowed_values:
+    1:
+      label: Zewnętrzne
+    3:
+      label: Audio
+    4:
+      label: Książka
+    5:
+      label: 'Ścieżka nawigacyjna'
+    11:
+      label: Zamknij
+    13:
+      label: Kopiuj
+    14:
+      label: Data
+    17:
+      label: Pobierz
+    18:
+      label: Edytuj
+    20:
+      label: Błąd
+    25:
+      label: Plik
+    27:
+      label: Globalne
+    30:
+      label: Obraz
+    32:
+      label: Informacja
+    34:
+      label: Język
+    35:
+      label: Lewo
+    38:
+      label: Położenie
+    44:
+      label: Prawo
+    45:
+      label: RSS
+    46:
+      label: Szukaj
+    54:
+      label: 'W górę'
+    55:
+      label: Wideo
+    56:
+      label: Ostrzeżenie

@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      fields:
+        title:
+          label: Заглавие
+        type:
+          label: 'Тип на съдържанието'
+        operations:
+          label: Действия
+      filters:
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Публикувано
+        type:
+          expose:
+            label: 'Тип на съдържанието'
+        title:
+          expose:
+            label: Заглавие
+  page_1:
+    display_title: Страница

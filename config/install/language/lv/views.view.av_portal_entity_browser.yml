@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          tags:
+            previous: '"'
+            next: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      filters:
+        search:
+          expose:
+            label: Meklēt
+  entity_browser_1:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Meklēt
+  entity_browser_2:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Meklēt

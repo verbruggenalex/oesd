@@ -1,0 +1,237 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      pager:
+        options:
+          tags:
+            previous: '‹ Vorherige Seite'
+            next: 'Nächste Seite ›'
+            first: '« Anfang'
+            last: 'Ende »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        title:
+          label: Titel
+          separator: ', '
+        item_count:
+          label: Elemente
+  assigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen
+      filters:
+        source_language:
+          expose:
+            label: Ausgangssprache
+        uid:
+          expose:
+            label: Anbieter
+        title:
+          expose:
+            label: Titel
+  closed:
+    display_title: Geschlossen
+    display_options:
+      menu:
+        title: Geschlossen
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+          separator: ', '
+        created:
+          label: Erstellt
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen
+      filters:
+        source_language:
+          expose:
+            label: Ausgangssprache
+        uid:
+          expose:
+            label: Anbieter
+        title:
+          expose:
+            label: Titel
+  completed:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+          separator: ', '
+        created:
+          label: Erstellt
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen
+      filters:
+        source_language:
+          expose:
+            label: Ausgangssprache
+        uid:
+          expose:
+            label: Anbieter
+        title:
+          expose:
+            label: Titel
+  pending:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen
+      filters:
+        source_language:
+          expose:
+            label: Ausgangssprache
+        uid:
+          expose:
+            label: Anbieter
+        title:
+          expose:
+            label: Titel
+  rejected:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+        created:
+          label: Erstellt
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen
+      filters:
+        source_language:
+          expose:
+            label: Ausgangssprache
+        uid:
+          expose:
+            label: Anbieter
+        title:
+          expose:
+            label: Titel
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: Massenaktualisierung
+        status:
+          label: Status
+        title:
+          label: Titel
+          separator: ', '
+        source_language:
+          label: Von
+          separator: ', '
+        target_language:
+          label: An
+          separator: ', '
+        item_count:
+          label: Elemente
+        loop_count:
+          separator: ', '
+        operations:
+          label: Aktionen

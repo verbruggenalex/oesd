@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      title: Viri
+  feed_1:
+    display_options:
+      title: 'OPML vir'
+  page_1:
+    display_title: Stran
+    display_options:
+      menu:
+        title: Viri

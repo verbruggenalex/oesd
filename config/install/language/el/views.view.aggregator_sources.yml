@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Εφαρμογή
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+          tags:
+            previous: '‹ Προηγούμενο'
+            next: 'Επόμενο ›'
+      title: Πηγές
+  feed_1:
+    display_title: Ροή
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: 'Ροή OPML'
+  page_1:
+    display_title: Σελίδα
+    display_options:
+      menu:
+        title: Πηγές
