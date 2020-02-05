@@ -48,6 +48,11 @@
             "url": "https://packages.drupal.org/8"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenEuropa\\Distribution\\": "./src/"
+        }
+    },
     "extra": {
         "artifacts": {
             "openeuropa/oe_theme": {

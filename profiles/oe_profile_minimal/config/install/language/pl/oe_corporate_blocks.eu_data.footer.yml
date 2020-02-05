@@ -1,0 +1,67 @@
+contact_title: Kontakt
+contact:
+  - 'Zadzwoń do nas pod numer <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Skorzystaj z innych form <a href="https://europa.eu/european-union/contact/call-us_pl">kontaktu telefonicznego</a>'
+  - 'Napisz do nas, <a href="https://europa.eu/european-union/contact/write-to-us_pl">korzystając z formularza</a>'
+  - 'Spotkaj się z nami <a href="https://europa.eu/european-union/contact/meet-us_pl">w lokalnym biurze UE</a>'
+social_media_title: 'Znajdź UE w serwisach społecznościowych'
+social_media:
+  -
+    label: 'Na profilu UE w mediach społecznościowych'
+    href: 'https://europa.eu/european-union/contact/social-networks_pl'
+institution_links_title: 'Instytucje UE'
+institution_links:
+  -
+    label: 'Parlament Europejski'
+    href: 'http://www.europarl.europa.eu/portal/pl'
+  -
+    label: 'Rada Europejska'
+    href: 'http://www.consilium.europa.eu/pl/european-council/'
+  -
+    label: 'Rada Unii Europejskiej'
+    href: 'http://www.consilium.europa.eu/pl/home/'
+  -
+    label: 'Komisja Europejska'
+    href: 'http://ec.europa.eu/index_pl.htm'
+  -
+    label: 'Trybunał Sprawiedliwości Unii Europejskiej'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/pl/'
+  -
+    label: 'Europejski Bank Centralny (EBC)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.pl.html'
+  -
+    label: 'Europejski Trybunał Obrachunkowy'
+    href: 'http://www.eca.europa.eu/pl'
+  -
+    label: 'Europejska Służba Działań Zewnętrznych (ESDZ)'
+    href: 'http://eeas.europa.eu/index_pl.htm'
+  -
+    label: 'Europejski Komitet Ekonomiczno-Społeczny (EKES)'
+    href: 'http://www.eesc.europa.eu/?i=portal.pl.home'
+  -
+    label: 'Europejski Komitet Regionów (KR)'
+    href: 'http://cor.europa.eu/pl/'
+  -
+    label: 'Europejski Bank Inwestycyjny (EBI)'
+  -
+    label: 'Europejski Inspektor Ochrony Danych (EIOD)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=pl'
+other_links:
+  -
+    label: 'Mapa strony'
+    href: /european-union/abouteuropa/sitemap_pl
+  -
+    label: 'Informacje o stronie'
+    href: /european-union/abouteuropa_pl
+  -
+    label: 'Polityka językowa'
+    href: /european-union/abouteuropa/language-policy_pl
+  -
+    label: 'Polityka prywatności'
+    href: /european-union/abouteuropa/privacy-policy_pl
+  -
+    label: 'Informacja prawna'
+    href: /european-union/abouteuropa/legal_notices_pl
+  -
+    label: 'Pliki cookie'
+    href: /european-union/abouteuropa/cookies_pl

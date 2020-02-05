@@ -1,0 +1,66 @@
+contact_title: 'Kontaktujte EÚ'
+contact:
+  - 'Volajte nám na číslo <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Využite iné možnosti <a href="https://europa.eu/european-union/contact/call-us_sk">telefonického kontaktu</a>'
+  - 'Píšte nám prostredníctvom <a href="https://europa.eu/european-union/contact/write-to-us_sk">kontaktného formulára</a>'
+  - 'Navštívte nás v niektorej z <a href="https://europa.eu/european-union/contact/meet-us_sk">lokálnych kancelárií EÚ</a>'
+social_media_title: 'Vyhľadať účet na sociálnych médiách'
+social_media:
+  -
+    label: 'Hľadajte EÚ na sociálnych médiách'
+    href: 'https://europa.eu/european-union/contact/social-networks_sk'
+institution_links_title: 'Inštitúcie EÚ'
+institution_links:
+  -
+    label: 'Európsky parlament'
+    href: 'http://www.europarl.europa.eu/portal/sk'
+  -
+    label: 'Európska rada'
+    href: 'http://www.consilium.europa.eu/sk/european-council/'
+  -
+    label: 'Rada Európskej únie'
+    href: 'http://www.consilium.europa.eu/sk/home/'
+  -
+    label: 'Európska komisia'
+    href: 'http://ec.europa.eu/index_sk.htm'
+  -
+    label: 'Súdny dvor Európskej únie'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/sk/'
+  -
+    label: 'Európska centrálna banka (ECB)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.sk.html'
+  -
+    label: 'Európsky dvor audítorov (ECA)'
+    href: 'http://www.eca.europa.eu/sk'
+  -
+    label: 'Európska služba pre vonkajšiu činnosť (ESVČ)'
+  -
+    label: 'Európsky hospodársky a sociálny výbor (EHSV)'
+    href: 'http://www.eesc.europa.eu/?i=portal.sk.home'
+  -
+    label: 'Európsky výbor regiónov (VR)'
+    href: 'http://cor.europa.eu/sk/'
+  -
+    label: 'Európska investičná banka (EIB)'
+  -
+    label: 'Európsky dozorný úradník pre ochranu údajov (EDPS)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=sk'
+other_links:
+  -
+    label: 'Mapa lokality'
+    href: /european-union/abouteuropa/sitemap_sk
+  -
+    label: 'O tejto lokalite'
+    href: /european-union/abouteuropa_sk
+  -
+    label: 'Jazyková politika'
+    href: /european-union/abouteuropa/language-policy_sk
+  -
+    label: 'Politika ochrany osobných údajov'
+    href: /european-union/abouteuropa/privacy-policy_sk
+  -
+    label: 'Právne upozornenie'
+    href: /european-union/abouteuropa/legal_notices_sk
+  -
+    label: 'Súbory cookies'
+    href: /european-union/abouteuropa/cookies_sk

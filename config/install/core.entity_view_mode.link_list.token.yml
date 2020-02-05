@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - oe_link_lists
-id: link_list.token
-label: Token
-targetEntityType: link_list
-cache: true

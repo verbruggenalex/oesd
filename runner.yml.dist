@@ -11,11 +11,8 @@ drupal:
     host: "sparql"
     port: "8890"
   site:
-    profile: "oesd"
+    profile: "oe_profile_minimal"
     name: "OESD"
-  post_install:
-    - "./vendor/bin/drush cr"
-    # - "./vendor/bin/drush oe-multilingual:import-local-translations"
   additional_settings: |
     $databases['sparql_default']['default'] = [
       'prefix' => '',
@@ -29,70 +26,81 @@ selenium:
   port: "4444"
   browser: "chrome"
 
+profiles:
+  oe_profile_minimal:
+    install:
+      - oe_corporate_blocks
+    dependencies:
+      - oe_authentication
+      - oe_multilingual
+      - oe_search
+      - oe_theme_helper
+  oe_profile_complete:
+    install:
+      - oe_content_news
+      - oe_content_page
+      - oe_content_persistent
+      - oe_content_policy
+      - oe_content_publication
+      - oe_content_timeline_field
+      - oe_content
+      # - oe_corporate_blocks_demo
+      - oe_corporate_blocks
+      - oe_editorial_content_lock
+      - oe_editorial_corporate_workflow_translation_poetry
+      - oe_editorial_corporate_workflow_translation
+      - oe_editorial_corporate_workflow
+      - oe_editorial_entity_version
+      # - oe_editorial_workflow_demo
+      - oe_editorial
+      - oe_link_lists_internal_source
+      - oe_link_lists_manual_source
+      - oe_link_lists_rss_source
+      - oe_link_lists
+      - oe_media_avportal
+      - oe_media_demo
+      - oe_media_embed
+      - oe_media_webtools
+      - oe_media
+      # - oe_multilingual_demo
+      - oe_multilingual_front_page
+      - oe_multilingual_selection_page
+      - oe_multilingual_url_suffix
+      # - oe_paragraphs_demo
+      - oe_paragraphs_media
+      - oe_paragraphs
+      # - oe_search_demo
+      - oe_translation_poetry_html_formatter
+      # - oe_translation_poetry_mock
+      - oe_translation_poetry
+      - oe_translation
+      - oe_webtools_analytics_rules
+      - oe_webtools_analytics
+      - oe_webtools_cookie_consent
+      - oe_webtools_geocoding
+      - oe_webtools_globan
+      - oe_webtools_laco_service
+      # - oe_webtools_laco_widget
+      - oe_webtools_maps
+      - oe_webtools_media
+      - oe_webtools_social_share
+      - oe_webtools
+      - oe_theme_content_news
+      - oe_theme_content_page
+      - oe_theme_content_policy
+      - oe_theme_content_publication
+      # - oe_theme_demo
+      # - oe_theme_test
+    dependencies:
+      - oe_authentication
+      - oe_multilingual
+      - oe_search
+      - oe_theme_helper
+
 commands:
-  drupal:enable-openeuropa:
-    - drush sql-drop -y
-    - ./vendor/bin/run toolkit:install-clean
-    - drush en -y oe_authentication
-    - drush en -y oe_content_news
-    - drush en -y oe_content_page
-    - drush en -y oe_content_persistent
-    - drush en -y oe_content_policy
-    - drush en -y oe_content_publication
-    - drush en -y oe_content_timeline_field
-    - drush en -y oe_content
-    # - drush en -y oe_corporate_blocks_demo
-    - drush en -y oe_corporate_blocks
-    - drush en -y oe_editorial_content_lock
-    - drush en -y oe_editorial_corporate_workflow_translation_poetry
-    - drush en -y oe_editorial_corporate_workflow_translation
-    - drush en -y oe_editorial_corporate_workflow
-    - drush en -y oe_editorial_entity_version
-    # - drush en -y oe_editorial_workflow_demo
-    - drush en -y oe_editorial
-    - drush en -y oe_link_lists_internal_source
-    - drush en -y oe_link_lists_manual_source
-    - drush en -y oe_link_lists_rss_source
-    - drush en -y oe_link_lists
-    - drush en -y oe_media_avportal
-    - drush en -y oe_media_demo
-    - drush en -y oe_media_embed
-    - drush en -y oe_media_webtools
-    - drush en -y oe_media
-    # - drush en -y oe_multilingual_demo
-    - drush en -y oe_multilingual_front_page
-    - drush en -y oe_multilingual_selection_page
-    - drush en -y oe_multilingual_url_suffix
-    - drush en -y oe_multilingual
-    # - drush en -y oe_paragraphs_demo
-    - drush en -y oe_paragraphs_media
-    - drush en -y oe_paragraphs
-    # - drush en -y oe_search_demo
-    - drush en -y oe_search
-    - drush en -y oe_translation_poetry_html_formatter
-    # - drush en -y oe_translation_poetry_mock
-    - drush en -y oe_translation_poetry
-    - drush en -y oe_translation
-    - drush en -y oe_webtools_analytics_rules
-    - drush en -y oe_webtools_analytics
-    - drush en -y oe_webtools_cookie_consent
-    - drush en -y oe_webtools_geocoding
-    - drush en -y oe_webtools_globan
-    - drush en -y oe_webtools_laco_service
-    - drush en -y oe_webtools_laco_widget
-    - drush en -y oe_webtools_maps
-    - drush en -y oe_webtools_media
-    - drush en -y oe_webtools_social_share
-    - drush en -y oe_webtools
-    - drush en -y oe_theme_content_news
-    - drush en -y oe_theme_content_page
-    - drush en -y oe_theme_content_policy
-    - drush en -y oe_theme_content_publication
-    # - drush en -y oe_theme_demo
-    - drush en -y oe_theme_helper
-    # - drush en -y oe_theme_test
   drupal:site-setup:
       - { task: "run", command: "drupal:permissions-setup" }
+      - rm -rf web/profiles/custom/oesd
       - { task: "mkdir", dir: "web/profiles/custom/oesd" }
       - cd web/profiles/custom/oesd && ln -sf ../../../../* .
       - rm -f web/profiles/custom/oesd/web web/profiles/custom/oesd/vendor
@@ -104,3 +112,7 @@ commands:
       - "find ./config/install/ -type f -exec sed -i -e '/_core:/,+1d' {} \\;"
       - "find ./config/install/ -type f -exec sed -i -e '/^uuid: /d' {} \\;"
       - rm -Rf config/sync
+  drupal:config-devel-enable:
+  - { task: "symlink", from: "../../../resources/settings.devel.php", to: "${drupal.root}/sites/${drupal.site.sites_subdir}/settings.override.php" }
+  drupal:config-devel-disable:
+  - { task: "remove", file: "${drupal.root}/sites/${drupal.site.sites_subdir}/settings.override.php" }

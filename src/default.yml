@@ -1,0 +1,5 @@
+qa:
+  scss:
+    scss-dir: 'lib/themes/digit_qa/scss'
+    css-dir: 'lib/themes/digit_qa/css'
+    files: []

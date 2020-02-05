@@ -1,0 +1,67 @@
+contact_title: 'Contactați UE'
+contact:
+  - 'Apelați numărul <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Utilizați alte <a href="https://europa.eu/european-union/contact/call-us_ro">opțiuni telefonice</a>'
+  - 'Scrieți-ne completând <a href="https://europa.eu/european-union/contact/write-to-us_ro">formularul de contact</a>'
+  - 'Veniți într-un birou <a href="https://europa.eu/european-union/contact/meet-us_ro">local al UE</a>'
+social_media_title: 'Găsiți un cont pe platformele de comunicare socială'
+social_media:
+  -
+    label: 'Căutați canalele UE pe rețelele sociale'
+    href: 'https://europa.eu/european-union/contact/social-networks_ro'
+institution_links_title: 'Instituțiile UE'
+institution_links:
+  -
+    label: 'Parlamentul European'
+    href: 'http://www.europarl.europa.eu/portal/ro'
+  -
+    label: 'Consiliul European'
+    href: 'http://www.consilium.europa.eu/ro/european-council/'
+  -
+    label: 'Consiliul Uniunii Europene'
+    href: 'http://www.consilium.europa.eu/ro/home/'
+  -
+    label: 'Comisia Europeană'
+    href: 'http://ec.europa.eu/index_ro.htm'
+  -
+    label: 'Curtea de Justiție a Uniunii Europene (CJUE)'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/ro/'
+  -
+    label: 'Banca Centrală Europeană (BCE)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.ro.html'
+  -
+    label: 'Curtea Europeană de Conturi'
+    href: 'http://www.eca.europa.eu/ro'
+  -
+    label: 'Serviciul European de Acțiune Externă (SEAE)'
+    href: 'http://eeas.europa.eu/index_ro.htm'
+  -
+    label: 'Comitetul Economic și Social European (CESE)'
+    href: 'http://www.eesc.europa.eu/?i=portal.ro.home'
+  -
+    label: 'Comitetul European al Regiunilor (CoR)'
+    href: 'http://cor.europa.eu/ro/'
+  -
+    label: 'Banca Europeană de Investiții (BEI)'
+  -
+    label: 'Autoritatea Europeană pentru Protecția Datelor (AEPD)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=ro'
+other_links:
+  -
+    label: 'Hartă site'
+    href: /european-union/abouteuropa/sitemap_ro
+  -
+    label: 'Despre site'
+    href: /european-union/abouteuropa_ro
+  -
+    label: 'Politica lingvistică'
+    href: /european-union/abouteuropa/language-policy_ro
+  -
+    label: 'Politica de confidențialitate'
+    href: /european-union/abouteuropa/privacy-policy_ro
+  -
+    label: 'Aviz juridic'
+    href: /european-union/abouteuropa/legal_notices_ro
+  -
+    label: Cookie-urile
+    href: /european-union/abouteuropa/cookies_ro
