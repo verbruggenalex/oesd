@@ -1,0 +1,91 @@
+version: '2'
+services:
+  web:
+    image: fpfis/httpd-php-dev:7.2
+    working_dir: ${PWD}
+    ports:
+      - 8080:8080
+    volumes:
+      - ${PWD}:${PWD} # Non Mac users.
+      - ${HOME}/.composer/auth.json:/root/.composer/auth.json
+      # - nfsmount:/var/www/html # Mac Users with the nfsmount volume.
+    environment:
+      DOCUMENT_ROOT: ${PWD}
+      # ASDA CREDENTIALS
+      # By leaving these variables empty Docker Compose will set them to their host values.
+      ASDA_USER:
+      ASDA_PASSWORD:
+      # XDEBUG CONFIGURATION
+      # For Cloud9 usage you can change this to:
+      # XDEBUG_CONFIG: idekey=cloud9ide remote_connect_back=0 remote_host=172.17.0.1 remote_enable=1
+      XDEBUG_CONFIG: "remote_enable=1 remote_host=10.254.254.254 remote_port=9000 idekey=PHPSTORM remote_autostart=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+      # For Xdebug setup, run this command in the terminal:
+      # For Mac users: sudo ifconfig en0 alias 10.254.254.254 255.255.255.0
+      # For Linux users: sudo ip addr add 10.254.254.254/32 dev lo label lo:1
+      # The following environment variables are required when a master site is to be installed locally.
+      DRUPAL_DATABASE_NAME: "drupal"
+      DRUPAL_DATABASE_USERNAME: "root"
+      DRUPAL_DATABASE_PASSWORD: ""
+      DRUPAL_DATABASE_PREFIX: ""
+      DRUPAL_DATABASE_HOST: "mysql"
+      DRUPAL_DATABASE_PORT: "3306"
+      DRUPAL_ACCOUNT_USERNAME: "admin"
+      DRUPAL_ACCOUNT_PASSWORD: "admin"
+      DRUPAL_SPARQL_HOSTNAME: "sparql"
+      DRUPAL_SPARQL_PORT: "8890"
+      DRUPAL_CAS_HOSTNAME: "authentication"
+      DRUPAL_CAS_PORT: "7002"
+      DRUPAL_WEBTOOLS_ANALYTICS_SITE_ID: "1234"
+      DRUPAL_WEBTOOLS_ANALYTICS_SITE_PATH: "localhost"
+      DRUPAL_BASE_URL: "http://web:8080/master-site/dist/web"
+      DRUPAL_PRIVATE_FILE_SYSTEM: "sites/default/files/private"
+      POETRY_IDENTIFIER_SEQUENCE: "NEXT_EUROPA_COUNTER"
+      POETRY_SERVICE_USERNAME: "admin"
+      POETRY_SERVICE_PASSWORD: "admin"
+      POETRY_NOTIFICATION_USERNAME: "admin"
+      POETRY_NOTIFICATION_PASSWORD: "admin"
+    env_file:
+      - .env
+  mysql:
+    image: percona/percona-server:5.7
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - mysql:/var/lib/mysql
+#    ports:
+#      - 3306:3306
+
+  sparql:
+    image: openeuropa/triple-store-dev:1.1.0
+    environment:
+    - SPARQL_UPDATE=true
+    - DBA_PASSWORD=dba
+    ports:
+      - "8890:8890"
+
+  # Spawn a Selenium server which also includes a VNC server on localhost:5900 (the password is "secret")
+  selenium:
+    image: selenium/standalone-chrome-debug:3.11
+    environment:
+      - DISPLAY=:99
+      - SE_OPTS=-debug
+    ports:
+      - 5900:5900
+    expose:
+      - 4444
+
+#### Mac users: uncomment the "volumes" key to enable the NFS file sharing. You can find more information about Docker for Mac here: https://github.com/openeuropa/openeuropa/blob/master/docs/starting/tooling.md#using-docker-on-macos
+
+#volumes:
+#  nfsmount:
+#    driver: local
+#    driver_opts:
+#      type: nfs
+#      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
+#      device: ":${PWD}/"
+
+#### End Mac users.
+
+volumes:
+  mysql:

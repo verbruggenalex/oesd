@@ -1,0 +1,145 @@
+drupal:
+  root: "build"
+  base_url: "http://web:8080/build"
+  database:
+    host: "mysql"
+    port: "3306"
+    name: "oesd"
+    user: "root"
+    password: ""
+  sparql:
+    host: "sparql"
+    port: "8890"
+  site:
+    profile: "minimal"
+    name: "OESD"
+  post_install:
+    - "./vendor/bin/drush cr"
+    # - "./vendor/bin/drush oe-multilingual:import-local-translations"
+  additional_settings: |
+    $databases['sparql_default']['default'] = [
+      'prefix' => '',
+      'host' => getenv('DRUPAL_SPARQL_HOSTNAME'),
+      'port' => getenv('DRUPAL_SPARQL_PORT'),
+      'namespace' => 'Drupal\\Driver\\Database\\sparql',
+      'driver' => 'sparql',
+    ];
+  settings:
+    settings:
+      file_scan_ignore_directories:
+        - "vendor"
+        - "${drupal.root}"
+      extension_discovery_scan_tests: TRUE
+      file_private_path: "sites/default/files/private"
+    databases:
+      sparql_default:
+        default:
+          prefix: ""
+          host: ${drupal.sparql.host}
+          port: ${drupal.sparql.port}
+          namespace: 'Drupal\Driver\Database\sparql'
+          driver: 'sparql'
+selenium:
+  host: "http://selenium"
+  port: "4444"
+  browser: "chrome"
+
+commands:
+  drupal:site-setup:
+    - { task: "symlink", from: "../../..", to: "${drupal.root}/profiles/custom/ewcms" }
+    - { task: "run", command: "drupal:drush-setup" }
+    - { task: "run", command: "drupal:settings-setup" }
+    # - { task: "run", command: "setup:behat" }
+    - task: "append"
+      file: "build/sites/default/settings.override.php"
+      text: |
+        $config['cas.settings']['server']['hostname'] = 'authentication';
+        $config['cas.settings']['server']['port'] = 7002;
+        $config['cas.settings']['server']['verify'] = 2;
+        $settings["poetry.identifier.sequence"] = getenv('POETRY_IDENTIFIER_SEQUENCE');
+        $settings["poetry.service.username"] = getenv('POETRY_SERVICE_USERNAME');
+        $settings["poetry.service.password"] = getenv('POETRY_SERVICE_PASSWORD');
+        $settings["poetry.notification.username"] = getenv('POETRY_NOTIFICATION_USERNAME');
+        $settings["poetry.notification.password"] = getenv('POETRY_NOTIFICATION_PASSWORD');
+  drone:demo-setup:
+    - task: "append"
+      file: "build/sites/default/settings.override.php"
+      text: |
+
+        $config['cas.settings']['server']['hostname'] = 'ecas.ec.europa.eu';
+        $config['cas.settings']['server']['port'] = 443;
+        $config['cas.settings']['server']['verify'] = 0;
+        $config['cas.settings']['forced_login']['enabled'] = FALSE;
+  # Setup master site so we can run EWCMS profile's Behat tests on it. In order to do this we have to:
+  # 1. allow to enable test module, this is necessary when running media related Behat tests
+  # 2. disable SSL verification, this is necessary when running tests accessing the EU Login mock service
+  drone:master-site-setup:
+    - task: "append"
+      file: "master-site/dist/web/sites/default/settings.php"
+      text: |
+
+        $settings["extension_discovery_scan_tests"] = true;
+        $config["cas.settings"]["server"]["verify"] = 2;
+#   setup:behat:
+#     - { task: "process", source: "behat.yml.dist", destination: "behat.yml" }
+  drupal:enable-openeuropa:
+    - drush sql-drop -y
+    - ./vendor/bin/run toolkit:install-clean
+    - drush en -y oe_authentication
+    - drush en -y oe_content_news
+    - drush en -y oe_content_page
+    - drush en -y oe_content_persistent
+    - drush en -y oe_content_policy
+    - drush en -y oe_content_publication
+    - drush en -y oe_content_timeline_field
+    - drush en -y oe_content
+    # - drush en -y oe_corporate_blocks_demo
+    - drush en -y oe_corporate_blocks
+    - drush en -y oe_editorial_content_lock
+    - drush en -y oe_editorial_corporate_workflow_translation_poetry
+    - drush en -y oe_editorial_corporate_workflow_translation
+    - drush en -y oe_editorial_corporate_workflow
+    - drush en -y oe_editorial_entity_version
+    # - drush en -y oe_editorial_workflow_demo
+    - drush en -y oe_editorial
+    - drush en -y oe_link_lists_internal_source
+    - drush en -y oe_link_lists_manual_source
+    - drush en -y oe_link_lists_rss_source
+    - drush en -y oe_link_lists
+    - drush en -y oe_media_avportal
+    - drush en -y oe_media_demo
+    - drush en -y oe_media_embed
+    - drush en -y oe_media_webtools
+    - drush en -y oe_media
+    # - drush en -y oe_multilingual_demo
+    - drush en -y oe_multilingual_front_page
+    - drush en -y oe_multilingual_selection_page
+    - drush en -y oe_multilingual_url_suffix
+    - drush en -y oe_multilingual
+    # - drush en -y oe_paragraphs_demo
+    - drush en -y oe_paragraphs_media
+    - drush en -y oe_paragraphs
+    # - drush en -y oe_search_demo
+    - drush en -y oe_search
+    - drush en -y oe_translation_poetry_html_formatter
+    # - drush en -y oe_translation_poetry_mock
+    - drush en -y oe_translation_poetry
+    - drush en -y oe_translation
+    - drush en -y oe_webtools_analytics_rules
+    - drush en -y oe_webtools_analytics
+    - drush en -y oe_webtools_cookie_consent
+    - drush en -y oe_webtools_geocoding
+    - drush en -y oe_webtools_globan
+    - drush en -y oe_webtools_laco_service
+    - drush en -y oe_webtools_laco_widget
+    - drush en -y oe_webtools_maps
+    - drush en -y oe_webtools_media
+    - drush en -y oe_webtools_social_share
+    - drush en -y oe_webtools
+    - drush en -y oe_theme_content_news
+    - drush en -y oe_theme_content_page
+    - drush en -y oe_theme_content_policy
+    - drush en -y oe_theme_content_publication
+    # - drush en -y oe_theme_demo
+    - drush en -y oe_theme_helper
+    # - drush en -y oe_theme_test
