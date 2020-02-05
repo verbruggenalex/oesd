@@ -45,8 +45,8 @@ class BuildProfileCommands extends AbstractCommands {
     $tasks = [];
     $config = $this->getConfig();
     $profileName = $options['profile-name'];
-    $install = $config->get('profiles.oe_profile_minimal.install');
-    $dependencies = $config->get('profiles.oe_profile_minimal.dependencies');
+    $install = $config->get("profiles.$profileName.install");
+    $dependencies = $config->get("profiles.$profileName.dependencies");
     $modules = array_merge($install, $dependencies);
 
     $tasks[] = $this->taskExecStack()
@@ -67,6 +67,7 @@ class BuildProfileCommands extends AbstractCommands {
         // If we have installed the complete profile we copy the translations so
         // we can ship them with the profile. Each profile will symlink to this
         // folder on config export.
+        // @TODO: We need to upload this as an asset instead of committing it.
         $tasks[] = $this->taskExecStack()
             ->stopOnFail()
             ->exec('rm -rf translations/*')
@@ -78,7 +79,10 @@ class BuildProfileCommands extends AbstractCommands {
         ->stopOnFail()
         ->exec('./vendor/bin/drush cr')
         ->exec('./vendor/bin/drush theme:enable oe_theme -y')
-        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y');
+        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y')
+        ->exec('./vendor/bin/drush theme:enable seven -y')
+        ->exec('./vendor/bin/drush config-set system.theme admin seven -y')
+        ->exec('./vendor/bin/drush theme:uninstall stark -y');
 
     // Build and return task collection.
     return $this->collectionBuilder()->addTaskList($tasks);
