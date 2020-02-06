@@ -3,7 +3,7 @@
 This distribution requires all the OpenEuropa modules and provides multiple
 profiles to install a subset or all those modules. For more information on
 what these modules provide, please refer to the OpenEuropa documentation on the
-OpenEuropa Components:
+components:
 
  - https://github.com/openeuropa/documentation/blob/master/docs/openeuropa-components.md#openeuropa-components
 
