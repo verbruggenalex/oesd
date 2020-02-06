@@ -1,0 +1,41 @@
+about_ec_title: 'Europeiska kommissionen'
+about_ec_links:
+  -
+    href: 'https://ec.europa.eu/info/index_sv'
+    label: 'Europeiska kommissionens webbplats'
+social_media_title: 'Följ kommissionen'
+social_media_links:
+  2:
+    link:
+      href: 'https://europa.eu/european-union/contact/social-networks_sv#n:+i:4+e:1+t:+s'
+      label: 'Andra sociala medier'
+about_eu_title: 'Europeiska unionen'
+about_eu_links:
+  -
+    href: 'https://europa.eu/european-union/about-eu/institutions-bodies_sv'
+    label: EU-institutionerna
+  -
+    href: 'https://europa.eu/european-union/index_sv'
+    label: 'Europeiska unionen'
+bottom_links:
+  -
+    href: 'https://ec.europa.eu/info/about-commissions-new-web-presence_sv'
+    label: 'Om kommissionens nya webbplats'
+  -
+    href: 'https://ec.europa.eu/info/language-policy_sv'
+    label: Språkpolicy
+  -
+    href: 'http://ec.europa.eu/info/resources-partners_sv'
+    label: 'Resurser för partner'
+  -
+    href: 'https://ec.europa.eu/info/cookies_sv'
+    label: 'Kakor (cookies)'
+  -
+    href: 'https://ec.europa.eu/info/privacy-policy_sv'
+    label: Integritetspolicy
+  -
+    href: 'https://ec.europa.eu/info/legal-notice_sv'
+    label: 'Rättsligt meddelande'
+  -
+    href: 'https://ec.europa.eu/info/contact_sv'
+    label: Kontakt

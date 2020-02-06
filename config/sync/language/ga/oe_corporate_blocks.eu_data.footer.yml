@@ -1,0 +1,65 @@
+contact_title: 'Déan teagmháil leis an Aontas Eorpach'
+contact:
+  - 'Glaoigh orainn ar <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Úsáid <a href="https://europa.eu/european-union/contact/call-us_ga">roghanna teileafóin eile</a>'
+  - 'Scríobh chugainn tríd an <a href="https://europa.eu/european-union/contact/write-to-us_ga">bhfoirm theagmhála</a>'
+  - 'Buail linn in <a href="https://europa.eu/european-union/contact/meet-us_ga">oifig áitiúil de chuid an Aontais</a>'
+social_media_title: 'Cuntas sna meáin shóisialta a aimsiú'
+social_media:
+  -
+    label: 'Cainéil an Aontais Eorpaigh ar na meáin shóisialta a chuardach'
+    href: 'https://europa.eu/european-union/contact/social-networks_ga'
+institution_links_title: 'Institiúidí an Aontais Eorpaigh'
+institution_links:
+  -
+    label: 'Parlaimint na hEorpa'
+    href: 'http://www.europarl.europa.eu/portal/ga'
+  -
+    label: 'An Chomhairle Eorpach'
+    href: 'http://www.consilium.europa.eu/ga/european-council/'
+  -
+    label: 'Comhairle an Aontais Eorpaigh'
+    href: 'http://www.consilium.europa.eu/ga/home/'
+  -
+    label: 'An Coimisiún Eorpach'
+    href: 'https://ec.europa.eu/commission/index_ga'
+  -
+    label: 'Cúirt Bhreithiúnais an Aontais Eorpaigh'
+  -
+    label: 'an Banc Ceannais Eorpach (BCE)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.ga.html'
+  -
+    label: 'Cúirt Iniúchóirí na hEorpa'
+    href: 'http://www.eca.europa.eu/ga'
+  -
+    label: 'An tSeirbhís Eorpach Gníomhaíochta Seachtraí (SEGS)'
+    href: 'http://eeas.europa.eu/index_ga.htm'
+  -
+    label: 'Coiste Eacnamaíoch agus Sóisialta na hEorpa (CESE)'
+    href: 'http://www.eesc.europa.eu/?i=portal.ga.home'
+  -
+    href: 'http://cor.europa.eu/ga/'
+  -
+    label: 'An Banc Eorpach Infheistíochta (BEI)'
+  -
+    label: 'An Maoirseoir Eorpach ar Chosaint Sonraí (MECS)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=ga'
+other_links:
+  -
+    label: 'Mapa suímh'
+    href: /european-union/abouteuropa/sitemap_ga
+  -
+    label: 'Faoin suíomh seo'
+    href: /european-union/abouteuropa_ga
+  -
+    label: 'Beartas teanga'
+    href: /european-union/abouteuropa/language-policy_ga
+  -
+    label: 'Beartas príobháideachais'
+    href: /european-union/abouteuropa/privacy-policy_ga
+  -
+    label: 'Fógra dlíthiúil'
+    href: /european-union/abouteuropa/legal_notices_ga
+  -
+    label: Fianáin
+    href: /european-union/abouteuropa/cookies_ga

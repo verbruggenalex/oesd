@@ -1,0 +1,67 @@
+contact_title: 'Võtke ELiga ühendust'
+contact:
+  - 'Helistage meile <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Kasutage ka muid <a href="https://europa.eu/european-union/contact/call-us_et">helistamisvõimalusi</a>'
+  - 'Kirjutage meile <a href="https://europa.eu/european-union/contact/write-to-us_et">kontaktvormi vahendusel</a>'
+  - 'Külastage meid <a href="https://europa.eu/european-union/contact/meet-us_et">kohalikus ELi esinduses</a>'
+social_media_title: 'Leidke sotsiaalmeediakonto'
+social_media:
+  -
+    label: 'Kasutage ELi sotsiaalmeedia kanaleid'
+    href: 'https://europa.eu/european-union/contact/social-networks_et'
+institution_links_title: 'ELi institutsioonid'
+institution_links:
+  -
+    label: 'Euroopa Parlament'
+    href: 'http://www.europarl.europa.eu/portal/et'
+  -
+    label: 'Euroopa Ülemkogu'
+    href: 'http://www.consilium.europa.eu/et/european-council/'
+  -
+    label: 'Euroopa Liidu Nõukogu'
+    href: 'http://www.consilium.europa.eu/et/home/'
+  -
+    label: 'Euroopa Komisjon'
+    href: 'https://ec.europa.eu/commission/index_et'
+  -
+    label: 'Euroopa Liidu Kohus'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/et/'
+  -
+    label: 'Euroopa Keskpank (EKP)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.et.html'
+  -
+    label: 'Euroopa Kontrollikoda'
+    href: 'http://www.eca.europa.eu/et'
+  -
+    label: 'Euroopa välisteenistus (EEAS)'
+    href: 'http://eeas.europa.eu/index_et.htm'
+  -
+    label: 'Euroopa Majandus- ja Sotsiaalkomitee'
+    href: 'http://www.eesc.europa.eu/?i=portal.et.home'
+  -
+    label: 'Euroopa Regioonide Komitee'
+    href: 'https://cor.europa.eu/et'
+  -
+    label: 'Euroopa Investeerimispank'
+  -
+    label: 'Euroopa Andmekaitseinspektor'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=et'
+other_links:
+  -
+    label: Sisujuht
+    href: /european-union/abouteuropa/sitemap_et
+  -
+    label: 'Selle saidi kohta'
+    href: /european-union/abouteuropa_et
+  -
+    label: Keelepoliitika
+    href: /european-union/abouteuropa/language-policy_et
+  -
+    label: 'Isikuandmete kaitse'
+    href: /european-union/abouteuropa/privacy-policy_et
+  -
+    label: Õigusteave
+    href: /european-union/abouteuropa/legal_notices_et
+  -
+    label: Küpsised
+    href: /european-union/abouteuropa/cookies_et

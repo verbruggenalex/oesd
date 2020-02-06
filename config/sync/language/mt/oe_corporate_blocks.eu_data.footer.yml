@@ -1,0 +1,66 @@
+contact_title: 'Ikkuntattja lill-UE'
+contact:
+  - 'Ċemplilna <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Uża alternattivi <a href="https://europa.eu/european-union/contact/call-us_mt">telefoniċi oħra</a>'
+  - 'Iltaqa’ magħna <a href="https://europa.eu/european-union/contact/write-to-us_mt">f’uffiċċju lokali tal-UE</a>'
+  - 'Iktbilna permezz <a href="https://europa.eu/european-union/contact/meet-us_mt">tal-formola ta’ kuntatt tagħna</a>'
+social_media_title: 'Sib kont ta'' midja soċjali'
+social_media:
+  -
+    label: 'Fittex kanali tal-midja soċjali tal-UE'
+    href: 'https://europa.eu/european-union/contact/social-networks_mt'
+institution_links_title: 'Istituzzjonijiet tal-UE'
+institution_links:
+  -
+    label: 'Il-Parlament Ewropew'
+    href: 'http://www.europarl.europa.eu/portal/mt'
+  -
+    label: 'Il-Kunsill Ewropew'
+    href: 'http://www.consilium.europa.eu/mt/european-council/'
+  -
+    label: 'Il-Kunsill tal-Unjoni Ewropea'
+    href: 'http://www.consilium.europa.eu/mt/home/'
+  -
+    label: 'Il-Kummissjoni Ewropea'
+    href: 'http://ec.europa.eu/index_mt.htm'
+  -
+    label: 'Il-Qorti tal-Ġustizzja tal-Unjoni Ewropea (QtĠ-UE)'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/mt/'
+  -
+    label: 'Il-Bank Ċentrali Ewropew (BĊE)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.mt.html'
+  -
+    label: 'Il-Qorti Ewropea tal-Awdituri (QEA)'
+    href: 'http://www.eca.europa.eu/mt'
+  -
+    label: 'Is-Servizz Ewropew għall-Azzjoni Esterna (SEAE)'
+    href: 'http://eeas.europa.eu/index_en.htm'
+  -
+    label: 'Il-Kumitat Ekonomiku u Soċjali Ewropew (KESE)'
+    href: 'http://www.eesc.europa.eu/?i=portal.mt.home'
+  -
+    label: 'Il-Kumitat tar-Reġjuni tal-Unjoni Ewropea (KtR)'
+    href: 'http://cor.europa.eu/mt/'
+  -
+    label: 'Il-Bank Ewropew tal-Investiment (BEI)'
+  -
+    label: 'Kontrollur Ewropew għall-Protezzjoni tad-Data (KEPD)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=mt'
+other_links:
+  -
+    label: 'Mappa tas-sit'
+    href: /european-union/abouteuropa/sitemap_mt
+  -
+    label: 'Dwar dan is-sit'
+    href: /european-union/abouteuropa_mt
+  -
+    label: 'Politika dwar il-lingwa'
+    href: /european-union/abouteuropa/language-policy_mt
+  -
+    label: 'Politika ta’ privatezza'
+    href: /european-union/abouteuropa/privacy-policy_mt
+  -
+    label: 'Avviż legali'
+    href: /european-union/abouteuropa/legal_notices_mt
+  -
+    href: /european-union/abouteuropa/cookies_mt

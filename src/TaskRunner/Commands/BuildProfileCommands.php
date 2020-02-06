@@ -9,6 +9,7 @@ use OpenEuropa\TaskRunner\Commands\AbstractCommands;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Class BuildProfileCommands.
@@ -111,6 +112,7 @@ class BuildProfileCommands extends AbstractCommands {
     $config = $this->getConfig();
     $configFolder = 'config/sync';
     $profileName = $options['profile-name'];
+    $dependencies = $config->get("profiles.$profileName.dependencies");
     $profileFolder = "profiles/$profileName/config/install";
 
     // @TODO: Remove system.site.yml and core.extension.yml after fetching info
@@ -118,13 +120,23 @@ class BuildProfileCommands extends AbstractCommands {
     // @TODO: Copy or Rsynce the sites/default/files/translations folder to the
     // correct folder in the translations/<language-name>. <- done in
     // oe-distribution:build-profile
-    $tasks[] = $this->taskExecStack()
+    $this->taskExecStack()
         ->stopOnFail()
         ->exec("rm -rf $configFolder")
         ->exec("rm -rf $profileFolder")
         ->exec("mkdir -p $profileFolder")
         ->exec('./vendor/bin/drush config:export -y')
-        ->exec("rsync -az $configFolder/ $profileFolder --delete")
+        ->exec("rsync -az $configFolder/ $profileFolder --delete")->run();
+    
+    $coreExtension = Yaml::parseFile("$profileFolder/core.extension.yml");
+    if (isset($coreExtension['module'])) {
+      $modules = array_keys($coreExtension['module']);
+      $install = array_diff($modules, $dependencies);
+      // TODO: Put these in the $profileName.info.yml
+    }
+
+    $this->taskExecStack()
+        ->stopOnFail()
         ->exec("rm -rf $profileFolder/system.site.yml $profileFolder/core.extension.yml")
         ->exec("rm -rf $profileFolder/block.block.stark_*.yml")
         ->exec("cd $profileFolder && ln -sf ../../../../translations translations")
@@ -132,8 +144,8 @@ class BuildProfileCommands extends AbstractCommands {
         ->exec("find ./$profileFolder -type f -exec sed -i -e '/^uuid: /d' {} \\;")
         ->exec("rm -rf $configFolder");
 
-    // Build and return task collection.
-    return $this->collectionBuilder()->addTaskList($tasks);
+    // // Build and return task collection.
+    // return $this->collectionBuilder()->addTaskList($tasks);
   }
 
 }
