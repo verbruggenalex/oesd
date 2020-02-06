@@ -81,8 +81,10 @@ class BuildProfileCommands extends AbstractCommands {
         ->exec('./vendor/bin/drush theme:enable oe_theme -y')
         ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y')
         ->exec('./vendor/bin/drush theme:enable seven -y')
-        ->exec('./vendor/bin/drush config-set system.theme admin seven -y')
-        ->exec('./vendor/bin/drush theme:uninstall stark -y');
+        ->exec('./vendor/bin/drush config-set system.theme admin seven -y');
+        // Not possible because stark is a dependency of the minimal profile.
+        // We will just delete the config files after exporting configuration.
+        // ->exec('./vendor/bin/drush theme:uninstall stark -y');
 
     // Build and return task collection.
     return $this->collectionBuilder()->addTaskList($tasks);
