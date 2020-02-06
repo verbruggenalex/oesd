@@ -14,7 +14,8 @@ components:
 Because of 2 known issues in OpenEuropa modules before you require this profile
 package, you need to
 
- - make sure the require section of your composer.json contains the following:
+
+<details><summary>make sure the require section of your composer.json contains the following:</summary>
 
 ```json
 {
@@ -24,7 +25,9 @@ package, you need to
 }
 ```
 
- - make sure the extra section of your composer.json contains the following:
+</details>
+
+<details><summary>make sure the extra section of your composer.json contains the following:</summary>
 
 ```json
 {
@@ -40,6 +43,8 @@ package, you need to
     }
 }
 ```
+
+</details>
 
 These issues have been reported in the OpenEuropa GitHub issue queue. If you
 feel like helping in solving these you are more than welcome to:
