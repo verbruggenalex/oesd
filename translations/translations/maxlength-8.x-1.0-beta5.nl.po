@@ -1,0 +1,26 @@
+# Dutch translation of Maxlength (8.x-1.0-beta5)
+# Copyright (c) 2020 by the Dutch translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Maxlength (8.x-1.0-beta5)\n"
+"POT-Creation-Date: 2020-01-29 19:03+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Fields"
+msgstr "Velden"
+msgid "Maxlength"
+msgstr "Maximale lengte"
+msgid "Max length"
+msgstr "Maximale lengte"
+msgid ""
+"Content limited to @limit characters, remaining: "
+"<strong>@remaining</strong>"
+msgstr ""
+"Inhoud beperkt tot @limit tekens, resterend: "
+"<strong>@remaining</strong>"

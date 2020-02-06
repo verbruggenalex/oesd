@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti
+  entity_browser_1:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti
+  entity_browser_2:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+id: oe_translator
+label: 'Translate content'
+weight: 2
+is_admin: null
+permissions:
+  - 'accept translation jobs'
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'translate any entity'
+  - 'use oe_corporate_workflow transition validated_to_published'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view the administration theme'

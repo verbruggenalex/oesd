@@ -1,0 +1,66 @@
+contact_title: 'Contactar con la UE'
+contact:
+  - 'Llámenos al <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Utilice otras <a href="https://europa.eu/european-union/contact/call-us_es">opciones telefónicas</a>'
+  - 'Escríbanos a través del <a href="https://europa.eu/european-union/contact/write-to-us_es">formulario de contacto</a>'
+  - 'Venga a conocernos a una <a href="https://europa.eu/european-union/contact/meet-us_es">oficina local de la UE</a>'
+social_media_title: 'Cuentas en las redes sociales'
+social_media:
+  -
+    label: 'Busque los canales de la UE en las redes sociales'
+    href: 'https://europa.eu/european-union/contact/social-networks_es'
+institution_links_title: 'Instituciones de la UE'
+institution_links:
+  -
+    label: 'Parlamento Europeo'
+    href: 'http://www.europarl.europa.eu/portal/es'
+  -
+    label: 'Consejo Europeo'
+    href: 'http://www.consilium.europa.eu/es/european-council/'
+  -
+    label: 'Consejo de la Unión Europea'
+    href: 'http://www.consilium.europa.eu/es/home/'
+  -
+    label: 'Comisión Europea'
+    href: 'https://ec.europa.eu/commission/index_es'
+  -
+    label: 'Tribunal de Justicia de la Unión Europea (TJUE)'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/es/'
+  -
+    label: 'Banco Central Europeo (BCE)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.es.html'
+  -
+    label: 'Tribunal de Cuentas Europeo (TCE)'
+    href: 'http://www.eca.europa.eu/es'
+  -
+    label: 'Servicio Europeo de Acción Exterior (SEAE)'
+    href: 'http://eeas.europa.eu/index_es.htm'
+  -
+    label: 'Comité Económico y Social Europeo (CESE)'
+    href: 'http://www.eesc.europa.eu/?i=portal.es.home'
+  -
+    label: 'Comité Europeo de las Regiones (CDR)'
+    href: 'https://cor.europa.eu/es'
+  -
+    label: 'Banco Europeo de Inversiones (BEI)'
+  -
+    label: 'Supervisor Europeo de Protección de Datos (SEPD)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=el'
+other_links:
+  -
+    label: 'Mapa del sitio'
+    href: /european-union/abouteuropa/sitemap_es
+  -
+    label: 'Sobre este sitio'
+    href: /european-union/abouteuropa_es
+  -
+    label: 'Política lingüística'
+    href: /european-union/abouteuropa/language-policy_es
+  -
+    label: 'Política de privacidad'
+    href: /european-union/abouteuropa/privacy-policy_es
+  -
+    label: 'Aviso jurídico'
+    href: /european-union/abouteuropa/legal_notices_es
+  -
+    href: /european-union/abouteuropa/cookies_es

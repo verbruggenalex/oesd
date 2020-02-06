@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Otsi
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Otsi
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Otsi

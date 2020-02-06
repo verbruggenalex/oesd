@@ -1,6 +1,6 @@
 {
-    "name": "openeuropa/distribution",
-    "description": "OpenEuropa Distribution",
+    "name": "ec-europa/oesd",
+    "description": "OpenEuropa Standard Distribution",
     "type": "drupal-profile",
     "license": "EUPL-1.2",
     "minimum-stability": "dev",
@@ -18,6 +18,7 @@
         "drupal/pathauto": "^1.6",
         "drupal/redirect": "^1.5",
         "drupal/styleguide": "^1.0@alpha",
+        "drupal/toolbar_themes": "^1.0@alpha",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
         "ec-europa/oe-poetry-client": "^0.3.8",
         "openeuropa/oe_authentication": "^1.1",
@@ -48,11 +49,6 @@
             "url": "https://packages.drupal.org/8"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "OpenEuropa\\Distribution\\": "./src/"
-        }
-    },
     "extra": {
         "artifacts": {
             "openeuropa/oe_theme": {
@@ -70,6 +66,9 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"]
         },
         "patches": {
+            "drupal/toolbar_themes": [
+                "https://www.drupal.org/files/issues/2018-12-08/toolbar_themes-padding-issue-2981847-7.patch"
+            ]
         }
     },
     "config": {

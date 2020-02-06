@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Suchen
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Suchen
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Suchen

@@ -1,0 +1,18 @@
+# Slovenian translation of Entity Version (8.x-1.0-beta2)
+# Copyright (c) 2019 by the Slovenian translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Entity Version (8.x-1.0-beta2)\n"
+"POT-Creation-Date: 2019-08-12 12:47+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Slovenian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(((n%100)==1)?(0):(((n%100)==2)?(1):((((n%100)==3)||((n%100)==4))?(2):3)));\n"
+
+msgid "Reset"
+msgstr "Ponastavi"
+msgid "Default value"
+msgstr "Privzeta vrednost"

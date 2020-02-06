@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_corporate_blocks
+id: footer_link_social.token
+label: Token
+targetEntityType: footer_link_social
+cache: true

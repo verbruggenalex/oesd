@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Pretraživanje
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Pretraživanje
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Pretraživanje

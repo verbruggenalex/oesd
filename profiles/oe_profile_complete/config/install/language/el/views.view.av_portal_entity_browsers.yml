@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Αναζήτηση
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Αναζήτηση
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Αναζήτηση

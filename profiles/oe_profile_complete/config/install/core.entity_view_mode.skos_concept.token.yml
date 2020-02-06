@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.token
+label: Token
+targetEntityType: skos_concept
+cache: true

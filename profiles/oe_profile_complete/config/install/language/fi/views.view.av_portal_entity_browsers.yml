@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Hae
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Hae
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Hae

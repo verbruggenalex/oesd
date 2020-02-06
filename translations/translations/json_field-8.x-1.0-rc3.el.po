@@ -1,0 +1,26 @@
+# Greek translation of JSON Field (8.x-1.0-rc3)
+# Copyright (c) 2019 by the Greek translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: JSON Field (8.x-1.0-rc3)\n"
+"POT-Creation-Date: 2019-03-04 14:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Value"
+msgstr "Αξία"
+msgid "Size"
+msgstr "Μέγεθος"
+msgid "Default value"
+msgstr "Προεπιλεγμένη τιμή"
+msgid "Data"
+msgstr "Δεδομένα"
+msgid "About"
+msgstr "Περί"
+msgid "Field types"
+msgstr "Τύποι πεδίων"

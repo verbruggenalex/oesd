@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Caută
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Caută
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Caută

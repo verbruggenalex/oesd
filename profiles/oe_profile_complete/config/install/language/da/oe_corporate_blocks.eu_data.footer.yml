@@ -1,0 +1,66 @@
+contact_title: 'Kontakt EU'
+contact:
+  - 'Ring til os på <a href="tel:0080067891011">00 800 6 7 8 9 10 11</a>'
+  - 'Brug andre muligheder for <a href="https://europa.eu/european-union/contact/call-us_da">telefonhenvendelse</a>'
+  - 'Skriv til os via <a href="https://europa.eu/european-union/contact/write-to-us_da">kontaktformularen</a>'
+  - 'Mød os på et <a href="https://europa.eu/european-union/contact/meet-us_da">lokalt EU-kontor</a>'
+social_media_title: 'Find en konto på de sociale medier'
+social_media:
+  -
+    label: 'Find EU på de sociale medier'
+    href: 'https://europa.eu/european-union/contact/social-networks_da'
+institution_links_title: EU-institutionerne
+institution_links:
+  -
+    label: Europa-Parlamentet
+    href: 'http://www.europarl.europa.eu/portal/da'
+  -
+    label: 'Det Europæiske Råd'
+    href: 'http://www.consilium.europa.eu/da/european-council/'
+  -
+    label: 'Rådet for Den Europæiske Union'
+    href: 'http://www.consilium.europa.eu/da/home/'
+  -
+    label: Europa-Kommissionen
+    href: 'https://ec.europa.eu/commission/index_da'
+  -
+    label: 'Den Europæiske Unions Domstol (EU-Domstolen)'
+    href: 'http://curia.europa.eu/jcms/jcms/j_6/da/'
+  -
+    label: 'Den Europæiske Centralbank (ECB)'
+    href: 'https://www.ecb.europa.eu/home/languagepolicy/html/index.da.html'
+  -
+    label: 'Den Europæiske Revisionsret'
+    href: 'http://www.eca.europa.eu/da'
+  -
+    label: 'Tjenesten for EU''s Optræden Udadtil (EU-Udenrigstjenesten)'
+    href: 'http://eeas.europa.eu/index_da.htm'
+  -
+    label: 'Det Europæiske Økonomiske og Sociale Udvalg (EØSU)'
+    href: 'http://www.eesc.europa.eu/?i=portal.da.home'
+  -
+    label: 'Det Europæiske Regionsudvalg'
+    href: 'https://cor.europa.eu/da'
+  -
+    label: 'Den Europæiske Investeringsbank (EIB)'
+  -
+    label: 'Den Europæiske Tilsynsførende for Databeskyttelse (EDPS)'
+    href: 'https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=da'
+other_links:
+  -
+    label: Oversigt
+    href: /european-union/abouteuropa/sitemap_da
+  -
+    label: 'Om dette websted'
+    href: /european-union/abouteuropa_da
+  -
+    label: Sprogpolitik
+    href: /european-union/abouteuropa/language-policy_da
+  -
+    label: Databeskyttelsespolitik
+    href: /european-union/abouteuropa/privacy-policy_da
+  -
+    label: 'Juridisk meddelelse'
+    href: /european-union/abouteuropa/legal_notices_da
+  -
+    href: /european-union/abouteuropa/cookies_da

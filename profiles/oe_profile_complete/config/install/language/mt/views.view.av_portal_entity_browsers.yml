@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Fittex
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Fittex
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Fittex

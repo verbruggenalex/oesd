@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Išči
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Išči
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Išči

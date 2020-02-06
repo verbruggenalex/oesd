@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti
+  photos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti
+  videos:
+    display_options:
+      filters:
+        search:
+          expose:
+            label: Ieškoti
