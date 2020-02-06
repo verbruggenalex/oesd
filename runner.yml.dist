@@ -44,14 +44,12 @@ profiles:
       - oe_content_publication
       - oe_content_timeline_field
       - oe_content
-      # - oe_corporate_blocks_demo
       - oe_corporate_blocks
       - oe_editorial_content_lock
       - oe_editorial_corporate_workflow_translation_poetry
       - oe_editorial_corporate_workflow_translation
       - oe_editorial_corporate_workflow
       - oe_editorial_entity_version
-      # - oe_editorial_workflow_demo
       - oe_editorial
       - oe_link_lists_internal_source
       - oe_link_lists_manual_source
@@ -62,16 +60,12 @@ profiles:
       - oe_media_embed
       - oe_media_webtools
       - oe_media
-      # - oe_multilingual_demo
       - oe_multilingual_front_page
       - oe_multilingual_selection_page
       - oe_multilingual_url_suffix
-      # - oe_paragraphs_demo
       - oe_paragraphs_media
       - oe_paragraphs
-      # - oe_search_demo
       - oe_translation_poetry_html_formatter
-      # - oe_translation_poetry_mock
       - oe_translation_poetry
       - oe_translation
       - oe_webtools_analytics_rules
@@ -80,7 +74,6 @@ profiles:
       - oe_webtools_geocoding
       - oe_webtools_globan
       - oe_webtools_laco_service
-      # - oe_webtools_laco_widget
       - oe_webtools_maps
       - oe_webtools_media
       - oe_webtools_social_share
@@ -89,8 +82,6 @@ profiles:
       - oe_theme_content_page
       - oe_theme_content_policy
       - oe_theme_content_publication
-      # - oe_theme_demo
-      # - oe_theme_test
     dependencies:
       - oe_authentication
       - oe_multilingual
