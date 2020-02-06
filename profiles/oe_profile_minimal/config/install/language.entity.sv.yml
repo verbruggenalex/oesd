@@ -1,9 +1,6 @@
-uuid: 852b177c-f6e5-473d-ba1a-39b0c6cedc7f
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: h2Hh1SFrQaN0OBZOlLu8p7SX_-ED0U7oKG_GNQpsmUo
 id: sv
 label: Swedish
 direction: ltr

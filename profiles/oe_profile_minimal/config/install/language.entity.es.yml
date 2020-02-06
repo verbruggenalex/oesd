@@ -1,9 +1,6 @@
-uuid: 0a22ec32-0b62-48e5-8abf-24bdf91ba9f4
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: b-qqKUV9as5vqSDcs0MnBeQPglrbo2AGYtpWnu_YNSM
 id: es
 label: Spanish
 direction: ltr

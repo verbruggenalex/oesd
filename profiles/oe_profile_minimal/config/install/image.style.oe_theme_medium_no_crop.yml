@@ -1,9 +1,6 @@
-uuid: 88e6b1bd-fd26-49ed-9ff7-5d31ba2f877c
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: AgKxxOgudX7TkFXNNmN5lHkj33IZyQGVCbQmLJB_xjA
 name: oe_theme_medium_no_crop
 label: 'Medium (no crop)'
 effects:

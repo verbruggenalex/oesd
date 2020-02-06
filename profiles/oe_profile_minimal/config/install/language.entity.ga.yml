@@ -1,9 +1,6 @@
-uuid: 1debe87a-fcaa-4f79-8325-f6dcb3108e85
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: _AQGY3GTJquJNxQI2KLU2I0wU2-WzA7JuweLxSz-Pig
 id: ga
 label: Irish
 direction: ltr

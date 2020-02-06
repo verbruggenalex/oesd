@@ -1,4 +1,3 @@
-uuid: f9f2390e-b93b-4487-ba90-bc8e83baec67
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - system
   theme:
     - oe_theme
-_core:
-  default_config_hash: '-d03U8iQFWFSM_KnLXP_dMC-9-QI5FJ-js-siIV0Zbw'
 id: oe_theme_main_page_content
 theme: oe_theme
 region: content

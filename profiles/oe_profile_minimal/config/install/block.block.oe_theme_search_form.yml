@@ -1,4 +1,3 @@
-uuid: 362224ac-8d0b-4bc8-afbc-3c66f7630e30
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - oe_search
   theme:
     - oe_theme
-_core:
-  default_config_hash: piFzXPjDWTgVnkov11HJLj69AwBa_UhxDp1z0ryghXk
 id: oe_theme_search_form
 theme: oe_theme
 region: site_header_secondary

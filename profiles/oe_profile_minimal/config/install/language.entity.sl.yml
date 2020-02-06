@@ -1,9 +1,6 @@
-uuid: cbf8f57c-6dc6-4b23-97c5-6d04cbdbd518
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: udxb3IKRFhAS60NYiB_NGjbes9AC4H8r_zUr4-0RWY0
 id: sl
 label: Slovenian
 direction: ltr

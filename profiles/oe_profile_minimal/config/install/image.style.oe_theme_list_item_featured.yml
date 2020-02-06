@@ -1,9 +1,6 @@
-uuid: 9da99d18-22e4-41ef-8ac3-fc15fedc6968
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: gRJ8PGy6h71xW3vZkiPccOZ2lIl0tGns5bVO3guJtYg
 name: oe_theme_list_item_featured
 label: 'List Item Featured'
 effects:

@@ -1,9 +1,6 @@
-uuid: 9c3222ca-81e9-4e34-8a0b-e3043023da48
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: IDcwJRoUF5tDmoSQxffKHzAx8X_1dnm3ziCkAqrrOj4
 id: et
 label: Estonian
 direction: ltr

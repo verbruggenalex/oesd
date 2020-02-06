@@ -62,7 +62,6 @@ class BuildProfileCommands extends AbstractCommands {
     
     if (in_array('oe_multilingual', $modules)) {
       $tasks[] = $this->taskExec('./vendor/bin/drush oe-multilingual:import-local-translations');
-      $tasks[] = $this->taskExec('./vendor/bin/drush locale:update');
       
       if ($profileName === 'oe_profile_complete') {
         // If we have installed the complete profile we copy the translations so
@@ -71,6 +70,7 @@ class BuildProfileCommands extends AbstractCommands {
         // @TODO: We need to upload this as an asset instead of committing it.
         $tasks[] = $this->taskExecStack()
             ->stopOnFail()
+            ->exec('./vendor/bin/drush locale:update')
             ->exec('rm -rf translations/*')
             ->exec("cp -Rf web/sites/default/files/translations translations");
       }
@@ -80,9 +80,15 @@ class BuildProfileCommands extends AbstractCommands {
         ->stopOnFail()
         ->exec('./vendor/bin/drush cr')
         ->exec('./vendor/bin/drush theme:enable oe_theme -y')
-        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y')
-        ->exec('./vendor/bin/drush theme:enable seven -y')
-        ->exec('./vendor/bin/drush config-set system.theme admin seven -y');
+        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y');
+        // Not possible because of fatal error:
+        // Twig\Error\LoaderError: Template                                                  
+        // "modules/contrib/ui_patterns/templates/pattern-page-header.html.twig" is not      
+        // defined. in Twig\Loader\ChainLoader->getCacheKey() (line 42 of                    
+        // /home/ec2-user/environment/oe/oesd/web/core/themes/classy/templates/block/block.  
+        // html.twig).  
+        // ->exec('./vendor/bin/drush theme:enable seven -y')
+        // ->exec('./vendor/bin/drush config-set system.theme admin seven -y')
         // Not possible because stark is a dependency of the minimal profile.
         // We will just delete the config files after exporting configuration.
         // ->exec('./vendor/bin/drush theme:uninstall stark -y');
@@ -113,10 +119,9 @@ class BuildProfileCommands extends AbstractCommands {
     $configFolder = 'config/sync';
     $profileName = $options['profile-name'];
     $dependencies = $config->get("profiles.$profileName.dependencies");
+    $infoFile = "profiles/$profileName/$profileName.info.yml";
     $profileFolder = "profiles/$profileName/config/install";
 
-    // @TODO: Remove system.site.yml and core.extension.yml after fetching info
-    // from them to put in the profile.info file.
     // @TODO: Copy or Rsynce the sites/default/files/translations folder to the
     // correct folder in the translations/<language-name>. <- done in
     // oe-distribution:build-profile
@@ -127,14 +132,23 @@ class BuildProfileCommands extends AbstractCommands {
         ->exec("mkdir -p $profileFolder")
         ->exec('./vendor/bin/drush config:export -y')
         ->exec("rsync -az $configFolder/ $profileFolder --delete")->run();
-    
+
     $coreExtension = Yaml::parseFile("$profileFolder/core.extension.yml");
     if (isset($coreExtension['module'])) {
       $modules = array_keys($coreExtension['module']);
-      $install = array_diff($modules, $dependencies);
-      // TODO: Put these in the $profileName.info.yml
+      $install = array_diff($modules, $dependencies, ['minimal']);
+      $info = Yaml::parseFile($infoFile);
+      $info['install'] = $install;
+      $info['dependencies'] = $dependencies;
+      // Dumps keys when array is bigger than a certain amount (like 15 or so).
+      $yaml = Yaml::dump($info, 2, 4);
+      file_put_contents($infoFile, $yaml);
     }
+    
+    // @TODO: Parse the system.theme.yml file and put the default and admin
+    // theme in the profile info file.
 
+    // Remove files and lines we don't need.
     $this->taskExecStack()
         ->stopOnFail()
         ->exec("rm -rf $profileFolder/system.site.yml $profileFolder/core.extension.yml")
@@ -142,7 +156,7 @@ class BuildProfileCommands extends AbstractCommands {
         ->exec("cd $profileFolder && ln -sf ../../../../translations translations")
         ->exec("find ./$profileFolder -type f -exec sed -i -e '/_core:/,+1d' {} \\;")
         ->exec("find ./$profileFolder -type f -exec sed -i -e '/^uuid: /d' {} \\;")
-        ->exec("rm -rf $configFolder");
+        ->exec("rm -rf $configFolder")->run();
 
     // // Build and return task collection.
     // return $this->collectionBuilder()->addTaskList($tasks);

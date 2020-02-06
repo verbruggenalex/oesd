@@ -1,9 +1,6 @@
-uuid: acf13958-cdf3-4e12-99fa-7b5ad68c12d9
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: ESC9MGLxVc0UWsOnE9-CWutDMyDMJf4_Y9sQtpBuK2w
 name: oe_theme_list_item_2x
 label: 'List item 2x'
 effects:

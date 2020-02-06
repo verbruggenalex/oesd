@@ -1,9 +1,6 @@
-uuid: 58a446c1-aa48-4af2-a3d4-f79347ff1794
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: hjj0l_iqtLnUaBD3ydtPzl7k03B4KfRK6MOPVTdYIEo
 id: mt
 label: Maltese
 direction: ltr

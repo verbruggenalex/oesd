@@ -1,4 +1,3 @@
-uuid: 2338ae8c-d81b-4754-ba9c-3e754500d53c
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - language
   theme:
     - oe_theme
-_core:
-  default_config_hash: m_y3HUNJNxrp2gjmo8ueUTKPsw-L20qZ1okyeMh7wDs
 id: oe_theme_language_switcher
 theme: oe_theme
 region: site_header

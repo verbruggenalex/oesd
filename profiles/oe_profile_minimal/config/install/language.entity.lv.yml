@@ -1,9 +1,6 @@
-uuid: 354b74bd-4c89-4e05-8462-74e9de20d0b4
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: aYHLMxakpfCsXE8N7IV8_Pz9t9rPllzobHZFj7xUSKw
 id: lv
 label: Latvian
 direction: ltr

@@ -1,9 +1,6 @@
-uuid: 248686aa-5d56-470f-8c72-84d2bee18f15
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: FnfOwYoWjIymeEBpXcMPE7edmlF1sF74akSNlHbyuyE
 id: pl
 label: Polish
 direction: ltr

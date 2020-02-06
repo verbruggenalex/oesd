@@ -1,43 +1,41 @@
-name: OpenEuropa Minimal Profile
+name: 'OpenEuropa Minimal Profile'
 type: profile
 description: 'A profile that enables all only required openeuropa components'
 core: 8.x
-
 install:
-  - block
-  - breakpoint
-  - cas
-  - ctools
-  - dblog
-  - dynamic_page_cache
-  - field
-  - file
-  - filter
-  - image
-  - language
-  - locale
-  - node
-  - oe_corporate_blocks
-  - page_cache
-  - path
-  - path_alias
-  - responsive_image
-  - system
-  - text
-  - token
-  - ui_patterns
-  - ui_patterns_library
-  - update
-  - user
-  - pathauto
-  - content_translation
-  - externalauth
-
+    0: block
+    1: breakpoint
+    2: cas
+    3: ctools
+    4: dblog
+    5: dynamic_page_cache
+    6: field
+    7: file
+    8: filter
+    9: image
+    10: language
+    11: locale
+    12: node
+    14: oe_corporate_blocks
+    18: page_cache
+    19: path
+    20: path_alias
+    21: responsive_image
+    22: system
+    23: text
+    24: token
+    25: ui_patterns
+    26: ui_patterns_library
+    27: update
+    28: user
+    29: pathauto
+    30: content_translation
+    31: externalauth
 dependencies:
-  - oe_authentication
-  - oe_multilingual
-  - oe_search
-  - oe_theme_helper
+    - oe_authentication
+    - oe_multilingual
+    - oe_search
+    - oe_theme_helper
 themes:
-  - oe_theme
-  - seven
+    - oe_theme
+    - seven

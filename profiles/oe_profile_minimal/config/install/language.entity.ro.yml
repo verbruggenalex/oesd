@@ -1,9 +1,6 @@
-uuid: 4e789ebc-a306-4c45-aa73-d84833cae543
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: Gai61rA9vVqySxrgVaAo60hrAMH7Yka0pZKhMo_Yywc
 id: ro
 label: Romanian
 direction: ltr

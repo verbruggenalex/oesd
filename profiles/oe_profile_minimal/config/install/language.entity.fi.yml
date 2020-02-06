@@ -1,9 +1,6 @@
-uuid: 963c27b3-7326-4c57-b715-02616aada521
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 6CDcoUJcbjOYWtV9x13IBRAjfx1ciX3h4ySeV_G0Ys0
 id: fi
 label: Finnish
 direction: ltr
