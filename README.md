@@ -43,6 +43,7 @@ package, you need to
 }
 ```
 </p></details>
+</blockquote>
 
 These issues have been reported in the OpenEuropa GitHub issue queue. If you
 feel like helping in solving these you are more than welcome to:
