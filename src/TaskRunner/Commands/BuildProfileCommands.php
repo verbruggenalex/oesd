@@ -80,15 +80,9 @@ class BuildProfileCommands extends AbstractCommands {
         ->stopOnFail()
         ->exec('./vendor/bin/drush cr')
         ->exec('./vendor/bin/drush theme:enable oe_theme -y')
-        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y');
-        // Not possible because of fatal error:
-        // Twig\Error\LoaderError: Template                                                  
-        // "modules/contrib/ui_patterns/templates/pattern-page-header.html.twig" is not      
-        // defined. in Twig\Loader\ChainLoader->getCacheKey() (line 42 of                    
-        // /home/ec2-user/environment/oe/oesd/web/core/themes/classy/templates/block/block.  
-        // html.twig).  
-        // ->exec('./vendor/bin/drush theme:enable seven -y')
-        // ->exec('./vendor/bin/drush config-set system.theme admin seven -y')
+        ->exec('./vendor/bin/drush config-set system.theme default oe_theme -y')
+        ->exec('./vendor/bin/drush theme:enable seven -y')
+        ->exec('./vendor/bin/drush config-set system.theme admin seven -y');
         // Not possible because stark is a dependency of the minimal profile.
         // We will just delete the config files after exporting configuration.
         // ->exec('./vendor/bin/drush theme:uninstall stark -y');
@@ -153,6 +147,7 @@ class BuildProfileCommands extends AbstractCommands {
         ->stopOnFail()
         ->exec("rm -rf $profileFolder/system.site.yml $profileFolder/core.extension.yml")
         ->exec("rm -rf $profileFolder/block.block.stark_*.yml")
+        ->exec("rm -rf $profileFolder/block.block.seven_*.yml")
         ->exec("cd $profileFolder && ln -sf ../../../../translations translations")
         ->exec("find ./$profileFolder -type f -exec sed -i -e '/_core:/,+1d' {} \\;")
         ->exec("find ./$profileFolder -type f -exec sed -i -e '/^uuid: /d' {} \\;")
