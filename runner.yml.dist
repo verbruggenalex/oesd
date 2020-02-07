@@ -11,7 +11,7 @@ drupal:
     host: "sparql"
     port: "8890"
   site:
-    profile: "oe_profile_minimal"
+    profile: "oe_profile_complete"
     name: "OESD"
   additional_settings: |
     $databases['sparql_default']['default'] = [
@@ -97,12 +97,6 @@ commands:
       - rm -f web/profiles/custom/oesd/web web/profiles/custom/oesd/vendor
       - { task: "run", command: "drupal:settings-setup" }
       - { task: "run", command: "drupal:drush-setup" }
-  profile:config-export:
-      - ./vendor/bin/drush config:export -y
-      - rsync -az --exclude 'system.site.yml' --exclude 'core.extension.yml' config/sync/ config/install --delete
-      - "find ./config/install/ -type f -exec sed -i -e '/_core:/,+1d' {} \\;"
-      - "find ./config/install/ -type f -exec sed -i -e '/^uuid: /d' {} \\;"
-      - rm -Rf config/sync
   drupal:config-devel-enable:
   - { task: "symlink", from: "../../../resources/settings.devel.php", to: "${drupal.root}/sites/${drupal.site.sites_subdir}/settings.override.php" }
   drupal:config-devel-disable:
